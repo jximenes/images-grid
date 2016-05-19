@@ -1,0 +1,16 @@
+<html ng-app="mainApp">
+  <head>
+    <script type="text/javascript" src="libs/angular.min.js"></script>
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+
+    <script type="text/javascript" src="app/main.controller.js"></script>
+    <script type="text/javascript" src="app/services/images.service.js"></script>
+	<script type="text/javascript" src="app/services/utils.service.js"></script>
+    <script type="text/javascript" src="app/directives/images-grid.directive.js"></script>
+
+    <link rel="stylesheet" href="css/images-grid.css"></link>
+  </head>
+  <body ng-controller="mainController">
+    <images-grid images="images"></images-grid>
+  </body>
+</html>

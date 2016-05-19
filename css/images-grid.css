@@ -1,0 +1,20 @@
+.item-parent{
+}
+
+.grid-item {
+	width:300px;
+	min-width: 300px;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.count{
+	position:fixed;
+	width:30px;
+	height:20px;
+	font-size:50px;
+	font-weight:bold;
+	color: black;
+	z-index:1;
+}
