@@ -2,7 +2,7 @@
   "use strict";
 
   angular
-    .module('directives', ['services'])
+    .module('directives', ['services', 'wu.masonry'])
   	.constant('DEFAULTS', {
   		MINIMUM_IMAGES : 50,
   		IMAGE_WIDTH : 300,
@@ -16,7 +16,7 @@
         scope: {
           images: '='
         },
-        template: "<span class='count'>{{loadedImages.length}}</span><div class='grid-container'><img ng-repeat='imageInfo in loadedImages' at='{{$index}}' class='grid-item' src='{{imageInfo.url}}' alt='{{imageInfo.name}}' style='height:{{imageInfo.height}}px;' ng-click='removeImage(imageInfo)'/></div>",
+        template: "<span class='count'>{{loadedImages.length}}</span><div class='grid-container' masonry><div class='item-container masonry-brick' ng-repeat='imageInfo in loadedImages'><img  at='{{$index}}' class='grid-item' src='{{imageInfo.url}}' alt='{{imageInfo.name}}' style='height:{{imageInfo.height}}px;' ng-click='removeImage(imageInfo)'/></div></div>",
         controller:['$scope', function($scope){
           $scope.loadedImages = [];
           $scope.removeImage = function(item){

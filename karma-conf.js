@@ -15,9 +15,19 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-		'libs/angular.min.js',
-		'libs/jquery.min.js',
-		'libs/angular-mocks.js',		
+		'bower_components/jquery/dist/jquery.js',
+		'bower_components/jquery-bridget/jquery-bridget.js',
+		'bower_components/ev-emitter/ev-emitter.js',
+		'bower_components/desandro-matches-selector/matches-selector.js',
+		'bower_components/fizzy-ui-utils/utils.js',
+		'bower_components/get-size/get-size.js',
+		'bower_components/outlayer/item.js',
+		'bower_components/outlayer/outlayer.js',
+		'bower_components/masonry/masonry.js',
+		'bower_components/imagesloaded/imagesloaded.js',
+		'bower_components/angular/angular.js',
+		'bower_components/angular-masonry/angular-masonry.js',
+		'bower_components/angular-mocks/angular-mocks.js',		
       	'app/**/*.js',
       	'tests/**/*.js'
     ],
